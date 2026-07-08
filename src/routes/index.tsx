@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Github, Instagram, Youtube, Music2, Sparkles, ArrowUpRight, Banknote} from "lucide-react";
 import { FaDiscord } from "react-icons/fa";
 
+import profilImg from "../images/profil.jpg";
+
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -47,7 +50,8 @@ function LinkInBio() {
               <div className="absolute inset-0 rounded-full bg-primary/40 blur-xl" />
               <div className="relative grid h-24 w-24 place-items-center overflow-hidden rounded-full bg-gradient-to-br from-primary to-primary/60 text-primary-foreground shadow-[var(--shadow-glow)]">
                 <img
-                  src="\src\images\profil.jpg"
+                  src={profilImg}
+                  alt="Profil"
                   className="h-full w-full object-cover"
                 />
             </div>
